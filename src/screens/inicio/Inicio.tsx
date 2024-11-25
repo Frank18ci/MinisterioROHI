@@ -20,8 +20,8 @@ function Inicio() {
     return (
         <main className="bg-gray-400">
             <Navbar />
-            <div className="flex justify-center items-center h-screen text-8xl text-gray-800">
-                <div className="font-bold" ref={el}></div>
+            <div className="flex justify-center items-center h-screen text-6xl sm:text-8xl text-gray-800">
+            <div className="font-bold" ref={el}></div>
             </div>
             <div className="container mx-auto px-4 py-8">
                 <div className="text-4xl font-bold text-center mb-6">¿Quiénes Somos?</div>
