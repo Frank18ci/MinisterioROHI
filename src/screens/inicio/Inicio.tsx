@@ -1,4 +1,3 @@
-import logoADP from '../../assets/LogoADP.png'
 import logoROHI from '../../assets/Logo.png'
 import React, { useEffect } from "react";
 import Navbar from "../../components/nav-bar/Navbar"

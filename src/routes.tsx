@@ -1,4 +1,3 @@
-import App from "./App"
 import Danzas from "./screens/danzas/Danzas"
 import Blog from "./screens/blog/Blog"
 import { createBrowserRouter } from "react-router-dom"
