@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/nav-bar/Navbar"
 import Typed from "typed.js";
-
+import logo from '../../assets/logo.png'
 function Inicio() {
     const el = React.useRef(null);
 
@@ -32,7 +32,7 @@ function Inicio() {
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <img src='../../assets/Logo.png' alt="Logo ROHI" className="max-w-full h-auto rounded" />
+                        <img src={logo} alt="Logo ROHI" className="max-w-full h-auto rounded" />
                     </div>
                 </div>
             </div>
