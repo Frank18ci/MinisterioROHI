@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/nav-bar/Navbar"
+import Footer from "../../components/footer/Footer";
 import Typed from "typed.js";
 import logo from '../../assets/logo.png'
 import './Inicio.css'
@@ -32,7 +33,7 @@ function Inicio() {
         };
     }, []);
     return (
-        <main className="bg-gray-400">
+        <main className="bg-gray-200">
             <Navbar />
             <div className="flex justify-center items-center h-screen text-6xl sm:text-8xl text-gray-800">
             <div className="font-bold" ref={el}></div>
@@ -67,6 +68,7 @@ function Inicio() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </main>
 
     )
