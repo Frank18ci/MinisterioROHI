@@ -1,21 +1,21 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function BtnScroll() {
   const [btnScroll, setBtnScroll] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        setBtnScroll(true); // Mostrar el botón
+        setBtnScroll(true);
       } else {
-        setBtnScroll(false); // Ocultar el botón
+        setBtnScroll(false);
       }
     };
 
-    // Añadir evento de scroll
     window.addEventListener('scroll', handleScroll);
 
-    // Limpiar evento cuando el componente se desmonte
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -27,6 +27,10 @@ function BtnScroll() {
       behavior: 'smooth',
     });
   };
+
+  useEffect(() => {
+    scrollToTop(); 
+  }, [location]);
 
   return (
     btnScroll && (

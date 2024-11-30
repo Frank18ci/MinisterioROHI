@@ -11,6 +11,7 @@ import img4 from "../../assets/images/img4.jpeg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BtnScroll from "../../components/btn-scroll/BtnScroll";
+import { Link } from "react-router-dom";
 
 
 function Inicio() {
@@ -88,7 +89,7 @@ function Inicio() {
                     </div>
                 </div>
                 <div className="text-center mt-6">
-                    <a href="/galeria" className="bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition">Ver más imágenes</a>
+                    <Link to="/danzas" className="bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition">Ver más imágenes</Link>
                 </div>
             </div>
             <div className="container mx-auto px-4 py-8 mb-12">
@@ -112,7 +113,7 @@ function Inicio() {
                     </div>
                 </div>
                 <div className="text-center mt-6">
-                    <a href="/videos" className="bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition">Ver más videos</a>
+                    <a href="https://www.youtube.com/@ALEXZURDOMUSIC" target="_blank" className="bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition">Ver más videos</a>
                 </div>
             </div>
             <Footer />
