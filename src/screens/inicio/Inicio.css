@@ -27,4 +27,7 @@
   .animate-right {
     animation: slideInRight 1s ease-out forwards;
   }
+  main{
+    overflow: hidden;
+  }
   

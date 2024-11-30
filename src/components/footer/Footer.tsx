@@ -7,28 +7,28 @@ export default function Footer() {
                 <ul className="py-5 flex justify-center gap-5">
                     <li>
                         <a
-                            className="border p-2 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
+                            className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="">
                             <i className="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
                         <a
-                            className="border p-2 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
+                            className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="">
                             <i className="fa-brands fa-instagram"></i>
                         </a>
                     </li>
                     <li>
                         <a
-                            className="border p-2 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
+                            className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="">
                             <i className="fa-brands fa-twitter"></i>
                         </a>
                     </li>
                     <li>
                         <a
-                            className="border p-2 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
+                            className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="">
                             <i className="fa-brands fa-youtube"></i>
                         </a>

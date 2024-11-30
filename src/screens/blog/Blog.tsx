@@ -1,10 +1,14 @@
+import Footer from "../../components/footer/Footer"
 import Navbar from "../../components/nav-bar/Navbar"
 
 function Blog(){
     return(
         <>
         <Navbar/>
-        <p>Blog here</p>
+        <main className="bg-gray-200">
+            <p>Blog here</p>
+        </main>
+        <Footer />
         </>
     )
 }

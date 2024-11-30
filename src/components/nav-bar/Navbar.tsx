@@ -33,15 +33,15 @@ function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img className="h-8 w-auto" src={logo} alt="Ministerio ROHI" />
+              <img className="h-12 w-auto rounded" src={logo} alt="Ministerio ROHI" />
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:ml-6 sm:flex items-center">
               <div className="flex space-x-4">
 
-                <Link to="/" className="rounded-m px-3 py-2 text-sm font-medium text-white" aria-current="page">Inicio</Link>
-                <Link to="/danzas" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Danzas</Link>
-                <Link to="/blog" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</Link>
-                <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                <Link to="/" className="rounded-m px-3 py-2 text-xl font-medium text-white" aria-current="page">Inicio</Link>
+                <Link to="/danzas" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Danzas</Link>
+                <Link to="/blog" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</Link>
+                <a href="#" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
               </div>
             </div>
           </div>
