@@ -39,7 +39,8 @@ function Navbar() {
               <div className="flex space-x-4">
 
                 <Link to="/" className="rounded-m px-3 py-2 text-xl font-medium text-white" aria-current="page">Inicio</Link>
-                <Link to="/danzas" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Danzas</Link>
+                <Link to="/imagenes" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Imagenes</Link>
+                <Link to="/Coreografias" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Coreografías</Link>
                 <Link to="/blog" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</Link>
                 <a href="#" className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
               </div>
@@ -52,7 +53,8 @@ function Navbar() {
       <div className={`sm:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">          
           <Link to="/" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Inicio</Link>
-          <Link to="/danzas" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Danzas</Link>
+          <Link to="/imagenes" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Imagenes</Link>
+          <Link to="/Coreografias" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Coreografías</Link>
           <Link to="/blog" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</Link>
         </div>
       </div>

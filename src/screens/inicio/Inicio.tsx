@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BtnScroll from "../../components/btn-scroll/BtnScroll";
 import { Link } from "react-router-dom";
+import VersiculoRandom from "../../components/versiculo-random/VersiculoRandom";
 
 
 function Inicio() {
@@ -55,6 +56,9 @@ function Inicio() {
                     </blockquote>
 
                 </div>
+            </div>
+            <div className="container mx-auto px-6 py-12">
+                <VersiculoRandom />
             </div>
             <div className="container mx-auto px-6 py-8">
                 <div className="text-4xl font-bold text-center mb-6">¿Quiénes Somos?</div>

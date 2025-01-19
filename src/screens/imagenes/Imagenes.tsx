@@ -17,7 +17,7 @@ import { useEffect } from "react"
 
 
 
-function Danzas(){
+function Imagenes(){
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -99,4 +99,4 @@ function Danzas(){
         </>
     )
 }
-export default Danzas
+export default Imagenes

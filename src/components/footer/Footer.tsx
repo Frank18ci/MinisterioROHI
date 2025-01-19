@@ -8,28 +8,31 @@ export default function Footer() {
                     <li>
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
-                            href="">
+                            href="https://www.facebook.com/profile.php?id=61570055005408"
+                            target="_blank">
                             <i className="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
-                            href="">
+                            href="https://www.instagram.com/ministeriorohi95/"
+                            target="_blank">
                             <i className="fa-brands fa-instagram"></i>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="">
                             <i className="fa-brands fa-twitter"></i>
                         </a>
-                    </li>
+                    </li> */}
                     <li>
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
-                            href="">
+                            href=""
+                            target="_blank">
                             <i className="fa-brands fa-youtube"></i>
                         </a>
                     </li>
