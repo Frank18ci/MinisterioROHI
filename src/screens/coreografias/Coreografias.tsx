@@ -30,7 +30,7 @@ function Coreografias(){
                 <div className="flex justify-center items-center my-4">
                 <iframe
                     className="shadow-lg rounded-lg border-2 border-blue-950 w-full max-w-6xl h-72 sm:h-96 md:h-[500px] lg:h-[600px]"
-                    src="https://www.youtube.com/embed/0J2QdDbelmY?si=mly_Bad98SBwktx3"
+                    src="https://www.youtube.com/embed/W9tUnz5dvXg?si=peINt4TpZO1kLakh"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 ></iframe>
