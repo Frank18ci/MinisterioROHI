@@ -1,146 +1,109 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
   return (
     <nav className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
+          {/* Botón Hamburguesa */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={isMobileMenuOpen}
               onClick={toggleMobileMenu}
             >
-              <span className="absolute -inset-0.5"></span>
-              <span className="sr-only">Open main menu</span>
-
-              <svg
-                className={`${isMobileMenuOpen ? "hidden" : "block"} size-6`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                data-slot="icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-
-              <svg
-                className={`${!isMobileMenuOpen ? "hidden" : "block"} size-6`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                data-slot="icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
+              <span className="sr-only">Abrir menú</span>
+              {isMobileMenuOpen ? (
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 6h18M3 12h18m-18 6h18"
+                  />
+                </svg>
+              )}
             </button>
           </div>
+
+          {/* Logo */}
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
-              <img
-                className="h-12 w-auto rounded"
-                src={logo}
-                alt="Ministerio ROHI"
-              />
+            <div className="flex items-center">
+              <img className="h-12 w-auto rounded" src={logo} alt="Ministerio ROHI" />
             </div>
-            <div className="hidden sm:ml-6 sm:flex items-center">
+
+            {/* Menú Desktop */}
+            <div className="hidden sm:flex sm:ml-6 items-center">
               <div className="flex space-x-4">
-                <Link
-                  to="/"
-                  className="rounded-m px-3 py-2 text-xl font-medium text-white"
-                  aria-current="page"
-                >
-                  Inicio
-                </Link>
-                <Link
-                  to="/nosotros"
-                  className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Nosotros
-                </Link>
-                <Link
-                  to="/eventos"
-                  className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Eventos
-                </Link>
-                <Link
-                  to="/galeria"
-                  className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Galería
-                </Link>
-                <Link
-                  to="/testimonios"
-                  className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Testimonios
-                </Link>
+                <NavLink to="/">Inicio</NavLink>
+                <NavLink to="/nosotros">Nosotros</NavLink>
+                <NavLink to="/eventos">Eventos</NavLink>
+                <NavLink to="/galeria">Galería</NavLink>
+                <NavLink to="/testimonios">Testimonios</NavLink>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
-        id="mobile-menu"
-      >
-        <div className="space-y-1 px-2 pb-3 pt-2">
-          <Link
-            to="/"
-            className="rounded-m px-3 py-2 text-xl font-medium text-white"
-            aria-current="page"
-          >
-            Inicio
-          </Link>
-          <Link
-            to="/nosotros"
-            className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >
-            Nosotros
-          </Link>
-          <Link
-            to="/eventos"
-            className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >
-            Eventos
-          </Link>
-          <Link
-            to="/galeria"
-            className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >
-            Galería
-          </Link>
-          <Link
-            to="/testimonios"
-            className="rounded-md px-3 py-2 text-xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-          >
-            Testimonios
-          </Link>
+      {/* Menú Móvil */}
+      {isMobileMenuOpen && (
+        <div className="sm:hidden flex flex-col  space-y-2 py-3 bg-gray-900">
+          <NavLink to="/" onClick={toggleMobileMenu}>Inicio</NavLink>
+          <NavLink to="/nosotros" onClick={toggleMobileMenu}>Nosotros</NavLink>
+          <NavLink to="/eventos" onClick={toggleMobileMenu}>Eventos</NavLink>
+          <NavLink to="/galeria" onClick={toggleMobileMenu}>Galería</NavLink>
+          <NavLink to="/testimonios" onClick={toggleMobileMenu}>Testimonios</NavLink>
         </div>
-      </div>
+      )}
     </nav>
   );
 }
+
+interface INavLink{
+  to?: string,
+  children: string,
+  onClick?: MouseEventHandler<HTMLAnchorElement>
+
+}
+const NavLink:React.FC<INavLink> = ({ to, children, onClick }) => {
+  return (
+    <Link
+      to={to || "#"}
+      onClick={onClick}
+      className="block px-4 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white rounded-md"
+    >
+      {children}
+    </Link>
+  );
+}
+
 export default Navbar;

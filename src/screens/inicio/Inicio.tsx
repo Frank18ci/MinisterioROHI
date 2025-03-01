@@ -12,8 +12,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BtnScroll from "../../components/btn-scroll/BtnScroll";
 import { Link } from "react-router-dom";
-import MensajeBienvenida from "../../components/Bienvenida/Mensaje/MensajeBienvenida";
-import VersiculoBienvenida from "../../components/Bienvenida/Versiculo/VersiculoBienvenida";
+import MensajeBienvenida from "../../components/bienvenida/mensaje/MensajeBienvenida";
+import VersiculoBienvenida from "../../components/bienvenida/versiculo/VersiculoBienvenida";
 
 
 function Inicio() {
@@ -46,7 +46,7 @@ function Inicio() {
                 <div className="font-bold" ref={el}></div>
             </div>
 
-            <div className="flex justify-center items-center pb-8 sm:flex-col md:flex-row">
+            <div className="flex justify-center items-center pb-8 flex-col md:flex-row">
                 <MensajeBienvenida />
                 <VersiculoBienvenida />
             </div>
