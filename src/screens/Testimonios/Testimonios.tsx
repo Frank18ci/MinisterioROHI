@@ -14,4 +14,4 @@ function Testimonios(){
         </main>
     )
 }
-export default Testimonios
+export default Testimonios;

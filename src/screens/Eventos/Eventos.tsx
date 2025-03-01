@@ -37,4 +37,4 @@ function Eventos() {
     </main>
   );
 }
-export default Eventos
+export default Eventos;

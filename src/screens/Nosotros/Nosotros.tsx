@@ -14,4 +14,4 @@ function Nosotros(){
         </main>
     )
 }
-export default Nosotros;
+export default Nosotros
