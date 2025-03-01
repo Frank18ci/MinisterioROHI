@@ -1,25 +1,35 @@
-import Blog from "./screens/blog/Blog"
 import { createBrowserRouter } from "react-router-dom"
-import Inicio from "./screens/inicio/Inicio"
-import Imagenes from "./screens/imagenes/Imagenes"
-import Coreografias from "./screens/coreografias/Coreografias"
+
+import Inicio from "./screens/Inicio/Inicio"
+import Nosotros from "./screens/Nosotros/Nosotros"
+import Eventos from "./screens/Eventos/Eventos"
+import Galeria from "./screens/Galeria/Galeria"
+import Testimonios from "./screens/Testimonios/Testimonios"
 const router = createBrowserRouter([
   
   {
-    path: '',
+    path: '/',
     element: <Inicio />
   },
   {
-    path: 'Imagenes',
-    element: <Imagenes />
+    path: '/nosotros',
+    element: <Nosotros />
   },
   {
-    path: 'blog',
-    element: <Blog />
+    path: '/eventos',
+    element: <Eventos />
   },
   {
-    path: 'Coreografias',
-    element: <Coreografias/>
+    path: '/galeria',
+    element: <Galeria />
+  },
+  {
+    path: '/testimonios',
+    element: <Testimonios/>
+  },
+  {
+    path: '/*',
+    element: <Inicio />
   }
 ])
 
