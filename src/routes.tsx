@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom"
 
 
-import Nosotros from "./screens/Nosotros/Nosotros"
-import Eventos from "./screens/Eventos/Eventos"
-import Galeria from "./screens/Galeria/Galeria"
-import Testimonios from "./screens/Testimonios/Testimonios"
-import Inicio from "./screens/Inicio/Inicio"
+import Nosotros from "./screens/nosotros/Nosotros"
+import Eventos from "./screens/eventos/Eventos"
+import Galeria from "./screens/galeria/Galeria"
+import Testimonios from "./screens/testimonios/Testimonios"
+import Inicio from "./screens/inicio/Inicio"
 const router = createBrowserRouter([
   
   {

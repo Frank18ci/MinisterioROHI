@@ -12,7 +12,7 @@ interface PresentacionProps {
 
 const Presentacion: React.FC<PresentacionProps> = ({ title, subtitle, fecha, hora, lugarURL }) => {
     return (
-        <div className="flex justify-between items-center m-2 px-4 py-2 border-2 rounded shadow transition border-dashed border-gray-600 bg-white">
+        <div className="flex justify-between items-center m-2 px-4 py-4 border-2 rounded shadow transition border-gray-600 bg-white">
         <div className="flex flex-col">
           <span className="md:text-3xl font-bold text-gray-900">{title || "Titulo"}</span>
           <span className="sm:text-sm text-md text-gray-600">

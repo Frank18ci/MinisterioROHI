@@ -1,7 +1,7 @@
 import BtnScroll from "../../components/btn-scroll/BtnScroll";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/nav-bar/Navbar";
-import Presentacion from "./components/Presentacion";
+import Presentacion from "../../components/presentacion/Presentacion";
 
 function Blog() {
   return (
