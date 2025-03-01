@@ -12,8 +12,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BtnScroll from "../../components/btn-scroll/BtnScroll";
 import { Link } from "react-router-dom";
-import MensajeBienvenida from "../../components/bienvenida/mensaje/MensajeBienvenida";
-import VersiculoBienvenida from "../../components/bienvenida/versiculo/VersiculoBienvenida";
+import MensajeBienvenida from "../../components/Bienvenida/Mensaje/MensajeBienvenida";
+import VersiculoBienvenida from "../../components/Bienvenida/Versiculo/VersiculoBienvenida";
 
 
 function Inicio() {
