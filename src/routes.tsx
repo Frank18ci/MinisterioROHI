@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router-dom"
 
-
+import Inicio from "./screens/inicio/Inicio"
 import Nosotros from "./screens/nosotros/Nosotros"
 import Eventos from "./screens/eventos/Eventos"
 import Galeria from "./screens/galeria/Galeria"
 import Testimonios from "./screens/testimonios/Testimonios"
-import Inicio from "./screens/inicio/Inicio"
 const router = createBrowserRouter([
   
   {
