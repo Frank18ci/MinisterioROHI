@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom"
 
 
-import Nosotros from "./screens/Nosotros/Nosotros.tsx"
-import Eventos from "./screens/Eventos/Eventos.tsx"
-import Galeria from "./screens/Galeria/Galeria.tsx"
-import Testimonios from "./screens/Testimonios/Testimonios.tsx"
-import Inicio from "./screens/Inicio/Inicio.tsx"
+import Nosotros from "./screens/Nosotros/Nosotros"
+import Eventos from "./screens/Eventos/Eventos"
+import Galeria from "./screens/Galeria/Galeria"
+import Testimonios from "./screens/Testimonios/Testimonios"
+import Inicio from "./screens/Inicio/Inicio"
 const router = createBrowserRouter([
   
   {
@@ -13,19 +13,19 @@ const router = createBrowserRouter([
     element: <Inicio />
   },
   {
-    path: '/nosotros',
+    path: 'nosotros',
     element: <Nosotros />
   },
   {
-    path: '/eventos',
+    path: 'eventos',
     element: <Eventos />
   },
   {
-    path: '/galeria',
+    path: 'galeria',
     element: <Galeria />
   },
   {
-    path: '/testimonios',
+    path: 'testimonios',
     element: <Testimonios/>
   },
   {
