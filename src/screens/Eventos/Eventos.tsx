@@ -3,7 +3,7 @@ import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/nav-bar/Navbar";
 import Presentacion from "../../components/presentacion/Presentacion";
 
-function Blog() {
+function Eventos() {
   return (
     <main className="bg-gray-200">
       <BtnScroll />
@@ -37,4 +37,4 @@ function Blog() {
     </main>
   );
 }
-export default Blog;
+export default Eventos

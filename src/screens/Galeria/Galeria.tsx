@@ -17,7 +17,7 @@ import { useEffect } from "react"
 
 
 
-function Imagenes(){
+function Galeria(){
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -99,4 +99,4 @@ function Imagenes(){
         </>
     )
 }
-export default Imagenes
+export default Galeria
