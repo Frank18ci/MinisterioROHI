@@ -9,14 +9,14 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav className="bg-[#0c0c0b] fixed w-full z-50">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-1 ">
         <div className="relative flex h-16 items-center justify-between">
           {/* Botón Hamburguesa */}
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-[#20201e] hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={isMobileMenuOpen}
               onClick={toggleMobileMenu}
@@ -55,28 +55,29 @@ function Navbar() {
           </div>
 
           {/* Logo */}
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-1 items-center sm:items-stretch sm:justify-between justify-between">
+            {/* Logo */}
             <div className="flex items-center">
               <img className="h-12 w-auto rounded" src={logo} alt="Ministerio ROHI" />
             </div>
 
             {/* Menú Desktop */}
-            <div className="hidden sm:flex sm:ml-6 items-center">
+            <div className="hidden sm:flex items-center">
               <div className="flex space-x-4">
-                <NavLink to="/">Inicio</NavLink>
-                <NavLink to="/nosotros">Nosotros</NavLink>
-                <NavLink to="/eventos">Eventos</NavLink>
-                <NavLink to="/galeria">Galería</NavLink>
-                <NavLink to="/testimonios">Testimonios</NavLink>
+              <NavLink to="/">Inicio</NavLink>
+              <NavLink to="/nosotros">Nosotros</NavLink>
+              <NavLink to="/eventos">Eventos</NavLink>
+              <NavLink to="/galeria">Galería</NavLink>
+              <NavLink to="/testimonios">Testimonios</NavLink>
               </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
 
       {/* Menú Móvil */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden flex flex-col  space-y-2 py-3 bg-gray-900">
+        <div className="sm:hidden flex flex-col space-y-2 py-3 bg-[#0c0c0b] items-start pl-4">
           <NavLink to="/" onClick={toggleMobileMenu}>Inicio</NavLink>
           <NavLink to="/nosotros" onClick={toggleMobileMenu}>Nosotros</NavLink>
           <NavLink to="/eventos" onClick={toggleMobileMenu}>Eventos</NavLink>
@@ -99,7 +100,7 @@ const NavLink:React.FC<INavLink> = ({ to, children, onClick }) => {
     <Link
       to={to || "#"}
       onClick={onClick}
-      className="block px-4 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white rounded-md"
+      className="block px-4 py-2 text-lg font-medium text-gray-300 hover:bg-[#20201e] hover:text-white rounded-md"
     >
       {children}
     </Link>

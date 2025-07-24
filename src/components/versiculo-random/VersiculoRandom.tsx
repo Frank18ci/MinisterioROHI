@@ -43,6 +43,9 @@ function VersiculoRandom() {
 
     return (
         <div className="text-center max-w-lg mx-auto bg-gray-100  rounded-xl shadow-xl">
+            <div>
+                <i className="fa-solid fa-book-bible text-6xl mb-4"></i>
+            </div>
             <h1 className="text-2xl text-left  p-2 bg-blue-500  shadow text-white  font-bold mb-4">
                 Versículo del día
             </h1>
