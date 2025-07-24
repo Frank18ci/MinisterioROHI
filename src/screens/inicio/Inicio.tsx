@@ -14,7 +14,7 @@ import BtnScroll from "../../components/btn-scroll/BtnScroll";
 import { Link } from "react-router-dom";
 import MensajeBienvenida from "../../components/Bienvenida/Mensaje/MensajeBienvenida";
 import VersiculoBienvenida from "../../components/Bienvenida/Versiculo/VersiculoBienvenida";
-import Titulo from "../../components/titulo/Titulo";
+import Titulo from "../../components/Titulo/Titulo";
 import CountUp from 'react-countup';
 import GaleriaElementos from "../../components/galeria-elementos/GaleriaElementos";
 
