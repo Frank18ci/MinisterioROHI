@@ -14,6 +14,9 @@ import BtnScroll from "../../components/btn-scroll/BtnScroll";
 import { Link } from "react-router-dom";
 import MensajeBienvenida from "../../components/Bienvenida/Mensaje/MensajeBienvenida";
 import VersiculoBienvenida from "../../components/Bienvenida/Versiculo/VersiculoBienvenida";
+import Titulo from "../../components/titulo/Titulo";
+import CountUp from 'react-countup';
+import GaleriaElementos from "../../components/galeria-elementos/GaleriaElementos";
 
 
 function Inicio() {
@@ -37,7 +40,7 @@ function Inicio() {
         };
     }, []);
     return (
-        <main className="bg-gray-200">
+        <main className="bg-gray-100">
             <BtnScroll />
             <Navbar />
             
@@ -46,9 +49,11 @@ function Inicio() {
                 <div className="font-bold" ref={el}></div>
             </div>
 
-            <div className="flex justify-center items-center pb-8 flex-col md:flex-row">
-                <MensajeBienvenida />
-                <VersiculoBienvenida />
+            <div className="container mx-auto px-4 py-8 mb-12">
+                <div className="flex justify-center items-center justify-items-center pb-8 flex-col md:flex-row">
+                    <MensajeBienvenida />
+                    <VersiculoBienvenida />
+                </div>
             </div>
 
             <div className="container mx-auto px-6 py-8">
@@ -68,27 +73,79 @@ function Inicio() {
                 </div>
             </div>
             <div className="container mx-auto px-4 py-8 mb-12">
-                <h2 className="text-3xl font-bold text-center mb-6">Galería de Imágenes</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div className="grid md:grid-cols-3 gap-20 md:gap-6 items-center justify-center justify-items-center">
                     <div>
-                        <img src={img1} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
+                        <div className="flex flex-col items-center">
+                            <div className="bg-blue-100 rounded-full p-4 mb-2 shadow-lg ">
+                                <i className="fa-solid fa-people-group text-5xl text-blue-600"></i>
+                            </div>
+                            <div className="text-center text-xl font-semibold text-gray-700 mb-1">
+                                Miembros del Ministerio
+                            </div>
+                            <div className="text-4xl font-extrabold text-blue-600 flex items-baseline">
+                                <span className="mr-1">+</span>
+                                <CountUp end={10} duration={2.5} />
+                            </div>
+                            <div className="text-sm text-gray-500 mt-1">
+                                y creciendo cada día
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <img src={img2} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
+                        <div className="flex flex-col items-center">
+                            <div className="bg-blue-200 rounded-full p-4 mb-2 shadow-lg">
+                                <i className="fa-solid fa-church text-6xl text-blue-700"></i>
+                            </div>
+                            <div className="text-center text-xl font-semibold text-gray-700 mb-1">
+                                Iglesia Visión de Fe
+                            </div>
+                            <div className="text-center text-lg font-medium text-blue-700 flex items-center gap-2 mb-1">
+                                <i className="fa-solid fa-location-dot text-blue-500"></i>
+                                Calle San Agustin 343, Arequipa, Perú
+                            </div>
+                            <div className="text-sm text-gray-500 mt-1">
+                                Un lugar de encuentro y crecimiento espiritual
+                            </div>
+                            <a
+                                href="https://maps.google.com/?q=Calle+San+Agustin+343,+Arequipa,+Peru"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-3 inline-block bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition"
+                            >
+                                Ver en Google Maps
+                            </a>
+                        </div>
+                        
                     </div>
                     <div>
-                        <img src={img3} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img4} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
+                        <div className="flex flex-col items-center">
+                            <div className="bg-blue-100 rounded-full p-4 mb-2 shadow-lg">
+                                <i className="fa-solid fa-hands-praying text-5xl text-blue-800"></i>
+                            </div>
+                            <div className="text-center text-xl font-semibold text-gray-700 mb-1">
+                                Años de Servicio Ministerial
+                            </div>
+                            <div className="text-4xl font-extrabold text-blue-800 flex items-baseline">
+                                <span className="mr-1">+</span>
+                                <CountUp end={2} duration={2.5} />
+                            </div>
+                            <div className="text-sm text-gray-500 mt-1">
+                                Sirviendo con dedicación y amor desde el comienzo.
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div className="container mx-auto px-4 py-8 mb-12">
+                <Titulo type="h2" mensaje="Galería de Imágenes" />
+                <GaleriaElementos imagenes={[img1, img2, img3, img4]} />
+                
                 <div className="text-center mt-6">
                     <Link to="/galeria" className="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-700 transition">Ver más imágenes</Link>
                 </div>
             </div>
             <div className="container mx-auto px-4 py-8 mb-12">
-                <h2 className="text-3xl font-bold text-center mb-6">Galería de Videos</h2>
+                <Titulo type="h2" mensaje="Galería de Videos" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="aspect-w-16 aspect-h-9">
                         <iframe

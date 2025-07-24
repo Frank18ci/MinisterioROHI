@@ -5,7 +5,7 @@ import Presentacion from "../../components/presentacion/Presentacion";
 
 function Eventos() {
   return (
-    <main className="bg-gray-200">
+    <main className="bg-gray-100">
       <BtnScroll />
       <Navbar />
       <div className="text-4xl font-bold text-center my-4">Presentaciones</div>

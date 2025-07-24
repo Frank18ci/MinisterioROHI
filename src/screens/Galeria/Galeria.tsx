@@ -14,6 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BtnScroll from "../../components/btn-scroll/BtnScroll"
 import { useEffect } from "react"
+import GaleriaElementos from "../../components/galeria-elementos/GaleriaElementos"
 
 
 
@@ -28,72 +29,13 @@ function Galeria(){
         <>
         <BtnScroll />
         <Navbar/>
-        <main className="bg-gray-200">
+        <main className="bg-gray-100">
         <div className="container mx-auto px-4 py-8 mb-12">
                 <h2 className="text-3xl font-bold text-center mb-6">Galería de Imágenes</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <div>
-                        <img src={img1} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img2} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img3} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img4} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img5} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img6} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img7} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img8} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img9} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img10} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img3} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img4} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img1} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img2} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img3} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img4} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img1} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img2} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img3} alt="img1" data-aos="fade-up-right" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                    <div>
-                        <img src={img4} alt="img1" data-aos="fade-up-left" className="border-gray-400 max-w-full h-auto rounded"></img>
-                    </div>
-                </div>
-            </div>
+                <GaleriaElementos imagenes={[
+                    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10
+                ]} />
+        </div>
         </main>
         <Footer />
         </>

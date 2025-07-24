@@ -4,7 +4,7 @@ import Navbar from "../../components/nav-bar/Navbar";
 
 function Nosotros(){
     return(
-        <main className="bg-gray-200">
+        <main className="bg-gray-100">
             <BtnScroll />
             <Navbar />
             <div className="flex justify-center items-center h-screen">
