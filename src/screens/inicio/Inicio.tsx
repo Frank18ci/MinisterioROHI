@@ -57,7 +57,7 @@ function Inicio() {
             </div>
 
             <div className="container mx-auto px-6 py-8">
-                <div className="text-4xl font-bold text-center mb-6">¿Quiénes Somos?</div>
+                <h1 className="text-4xl font-bold text-center mb-6">¿Quiénes Somos?</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                     <div data-aos="fade-right">
                         <p className="text-justify text-lg text-gray-900">
@@ -79,9 +79,9 @@ function Inicio() {
                             <div className="bg-blue-100 rounded-full p-4 mb-2 shadow-lg ">
                                 <i className="fa-solid fa-people-group text-5xl text-blue-600"></i>
                             </div>
-                            <div className="text-center text-xl font-semibold text-gray-700 mb-1">
+                            <h2 className="text-center text-xl font-semibold text-gray-700 mb-1">
                                 Miembros del Ministerio
-                            </div>
+                            </h2>
                             <div className="text-4xl font-extrabold text-blue-600 flex items-baseline">
                                 <span className="mr-1">+</span>
                                 <CountUp end={10} duration={2.5} />
@@ -137,7 +137,7 @@ function Inicio() {
                 </div>
             </div>
             <div className="container mx-auto px-4 py-8 mb-12">
-                <Titulo type="h2" mensaje="Galería de Imágenes" />
+                <Titulo type="h3" mensaje="Galería de Imágenes" />
                 <GaleriaElementos imagenes={[img1, img2, img3, img4]} />
                 
                 <div className="text-center mt-6">
@@ -145,7 +145,7 @@ function Inicio() {
                 </div>
             </div>
             <div className="container mx-auto px-4 py-8 mb-12">
-                <Titulo type="h2" mensaje="Galería de Videos" />
+                <Titulo type="h4" mensaje="Galería de Videos" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="aspect-w-16 aspect-h-9">
                         <iframe
