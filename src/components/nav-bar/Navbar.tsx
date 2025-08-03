@@ -65,9 +65,9 @@ function Navbar() {
             <div className="hidden sm:flex items-center">
               <div className="flex space-x-4">
               <NavLink to="/">Inicio</NavLink>
+              <NavLink to="/galeria">Galería</NavLink>
               <NavLink to="/nosotros">Nosotros</NavLink>
               <NavLink to="/eventos">Eventos</NavLink>
-              <NavLink to="/galeria">Galería</NavLink>
               <NavLink to="/testimonios">Testimonios</NavLink>
               </div>
             </div>
@@ -79,9 +79,9 @@ function Navbar() {
       {isMobileMenuOpen && (
         <div className="sm:hidden flex flex-col space-y-2 py-3 bg-[#0c0c0b] items-start pl-4">
           <NavLink to="/" onClick={toggleMobileMenu}>Inicio</NavLink>
+          <NavLink to="/galeria" onClick={toggleMobileMenu}>Galería</NavLink>
           <NavLink to="/nosotros" onClick={toggleMobileMenu}>Nosotros</NavLink>
           <NavLink to="/eventos" onClick={toggleMobileMenu}>Eventos</NavLink>
-          <NavLink to="/galeria" onClick={toggleMobileMenu}>Galería</NavLink>
           <NavLink to="/testimonios" onClick={toggleMobileMenu}>Testimonios</NavLink>
         </div>
       )}

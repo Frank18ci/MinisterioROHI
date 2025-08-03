@@ -10,6 +10,23 @@ import img7 from "../../assets/images/img7.jpeg"
 import img8 from "../../assets/images/img8.jpeg"
 import img9 from "../../assets/images/img9.jpeg"
 import img10 from "../../assets/images/img10.jpeg"
+import img11 from "../../assets/images/img11.jpeg"
+import img12 from "../../assets/images/img12.jpeg"
+import img13 from "../../assets/images/img13.jpeg"
+import img14 from "../../assets/images/img14.jpeg"
+import img15 from "../../assets/images/img15.jpeg"
+import img16 from "../../assets/images/img16.jpeg"
+import img17 from "../../assets/images/img17.jpeg"
+import img18 from "../../assets/images/img18.jpeg"
+import img19 from "../../assets/images/img19.jpeg"
+import img20 from "../../assets/images/img20.jpeg"
+import img21 from "../../assets/images/img21.jpeg"
+import img22 from "../../assets/images/img22.jpeg"
+import img23 from "../../assets/images/img23.jpeg"
+import img24 from "../../assets/images/img24.jpeg"
+import img25 from "../../assets/images/img25.jpeg"
+import img26 from "../../assets/images/img26.jpeg"
+import img27 from "../../assets/images/img27.jpeg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BtnScroll from "../../components/btn-scroll/BtnScroll"
@@ -33,7 +50,9 @@ function Galeria(){
         <div className="container mx-auto px-4 py-8 mb-12">
                 <h2 className="text-3xl font-bold text-center mb-6">Galería de Imágenes</h2>
                 <GaleriaElementos imagenes={[
-                    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10
+                    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13,
+                    img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25,
+                    img26, img27
                 ]} />
         </div>
         </main>

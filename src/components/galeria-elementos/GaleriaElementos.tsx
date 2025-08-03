@@ -33,7 +33,7 @@ useEffect(() => {
                             alt={`Imagen ${index + 1}`}
                             data-aos="fade-up"
                             data-aos-delay={`${index * 100}`}
-                            className="border-gray-400 max-w-full h-auto rounded object-cover aspect-video cursor-pointer"
+                            className={"border-gray-400 max-w-full h-auto rounded object-cover cursor-pointer" + (sizes[index]?.height > sizes[index]?.width ? 'aspect-[4/3]' : 'aspect-video')}
                         />
                     )}
                 </Item>
