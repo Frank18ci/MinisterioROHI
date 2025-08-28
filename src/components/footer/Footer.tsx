@@ -10,6 +10,7 @@ export default function Footer() {
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="https://www.facebook.com/profile.php?id=61570055005408"
+                            aria-label="Facebook"
                             target="_blank">
                             <i className="fa-brands fa-facebook-f"></i>
                         </a>
@@ -18,6 +19,7 @@ export default function Footer() {
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="https://www.instagram.com/ministeriorohi95/"
+                            aria-label="Instagram"
                             target="_blank">
                             <i className="fa-brands fa-instagram"></i>
                         </a>
@@ -33,6 +35,7 @@ export default function Footer() {
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
                             href="https://www.youtube.com/@MINISTERIOROHI"
+                            aria-label="YouTube"
                             target="_blank">
                             <i className="fa-brands fa-youtube"></i>
                         </a>
