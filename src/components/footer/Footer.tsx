@@ -32,7 +32,7 @@ export default function Footer() {
                     <li>
                         <a
                             className="border p-2 hover:scale-125 border-gray-900 rounded-full flex items-center justify-center w-10 h-10"
-                            href=""
+                            href="https://www.youtube.com/@MINISTERIOROHI"
                             target="_blank">
                             <i className="fa-brands fa-youtube"></i>
                         </a>
