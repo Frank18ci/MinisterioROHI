@@ -32,6 +32,7 @@ import 'aos/dist/aos.css';
 import BtnScroll from "../../components/btn-scroll/BtnScroll"
 import { useEffect } from "react"
 import GaleriaElementos from "../../components/galeria-elementos/GaleriaElementos"
+import Titulo from "../../components/Titulo/Titulo"
 
 
 
@@ -47,8 +48,8 @@ function Galeria(){
         <BtnScroll />
         <Navbar/>
         <main className="bg-gray-100">
-        <div className="container mx-auto px-4 py-8 mb-12">
-                <h2 className="text-3xl font-bold text-center mb-6">Galería de Imágenes</h2>
+        <div className="container mx-auto pt-32 px-6 py-8">
+                <Titulo type="h1" mensaje="Galería de Imágenes" className="text-center text-5xl mb-16" />
                 <GaleriaElementos imagenes={[
                     img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13,
                     img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25,

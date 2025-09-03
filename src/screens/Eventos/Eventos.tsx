@@ -9,8 +9,8 @@ function Eventos() {
     <main className="bg-gray-100 ">
       <BtnScroll />
       <Navbar />
-      <div className="container mx-auto">
-        <Titulo type="h1" mensaje="Eventos" className="mt-28"></Titulo>
+      <div className="container mx-auto pt-32 px-6 py-8">
+        <Titulo type="h1" mensaje="Eventos" className="text-center text-5xl mb-16" />
         <div className="my-7 mx-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Presentacion
             title="Libre Soy"
@@ -19,7 +19,7 @@ function Eventos() {
             hora="6:00 PM"
             lugar="Iglesia"
             lugarURL="https://maps.app.goo.gl/wELUNuhSepefKZWs9"
-            imageURL="presentacion-image.jpg"
+            imageURL="presentacion-image.webp"
           />
           <Presentacion
             title="Mix Bueno Es Dios | Mix Rey Vencedor"
@@ -28,7 +28,7 @@ function Eventos() {
             hora="6:00 PM"
             lugar="Iglesia"
             lugarURL="https://maps.app.goo.gl/wELUNuhSepefKZWs9"
-            imageURL="presentacion-image2.jpg"
+            imageURL="presentacion-image2.webp"
           />
           <Presentacion
             title="Lo Mio No Pasa"
@@ -37,7 +37,7 @@ function Eventos() {
             hora="6:00 PM"
             lugar="Iglesia"
             lugarURL="https://maps.app.goo.gl/wELUNuhSepefKZWs9"
-            imageURL="presentacion-image3.jpg"
+            imageURL="presentacion-image3.webp"
           />
         </div>
       </div>

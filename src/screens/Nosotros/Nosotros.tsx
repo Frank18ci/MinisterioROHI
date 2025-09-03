@@ -9,6 +9,7 @@ function Nosotros() {
       <BtnScroll />
       <Navbar />
       <div className="container mx-auto pt-32 px-6 py-8 ">
+        <Titulo type="h1" mensaje="Nosotros" className="text-center text-5xl mb-16" />
         <div className="grid md:grid-cols-3 justify-items-center gap-8">
           <div className="p-8 bg-white rounded-lg border border-gray-50 shadow-lg">
             <div className="text-center ">

@@ -1,4 +1,4 @@
-const { SitemapStream, streamToPromise } = require("sitemap");
+import { SitemapStream, streamToPromise } from "sitemap";
 
 const links = [
   { url: "/", changefreq: "daily", priority: 1.0 },
