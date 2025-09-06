@@ -60,9 +60,9 @@ function Inicio() {
                 <h1 className="text-4xl font-bold text-center mb-6">¿Quiénes Somos?</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                     <div data-aos="fade-right">
-                        <p className="text-justify text-lg text-gray-900">
+                        <h1 className="text-justify text-lg text-gray-900">
                             En el Ministerio ROHI de la Iglesia Visión de Fe, vivimos nuestra misión con pasión, creando una comunidad donde cada persona experimenta el amor de Dios, crece en su fe y descubre su propósito en Cristo.
-                        </p>
+                        </h1>
                         <p className="text-justify text-lg text-gray-900">
                             Fomentamos un ambiente de adoración y aprendizaje, donde los talentos se convierten en servicio. Unidos en respeto y apoyo, buscamos impactar positivamente nuestro entorno y reflejar los valores del Reino de Dios. Cada paso en la fe es una oportunidad para acercarnos más a Él.
                         </p>
