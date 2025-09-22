@@ -17,6 +17,7 @@ import VersiculoBienvenida from "../../components/Bienvenida/Versiculo/Versiculo
 import Titulo from "../../components/Titulo/Titulo";
 import CountUp from 'react-countup';
 import GaleriaElementos from "../../components/galeria-elementos/GaleriaElementos";
+import Videos from "../../components/sections/Videos";
 
 
 function Inicio() {
@@ -144,30 +145,7 @@ function Inicio() {
                     <Link to="/galeria" className="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-700 transition">Ver más imágenes</Link>
                 </div>
             </div>
-            <div className="container mx-auto px-4 py-8 mb-12">
-                <Titulo type="h4" mensaje="Galería de Videos" />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="aspect-w-16 aspect-h-9">
-                        <iframe
-                            src="https://www.youtube.com/embed/Kd0a5_Nkkkc"
-                            title="Fiesta en el Desierto | Montesanto | Coreografía"
-                            className="w-full h-96 rounded-lg shadow-md"
-                            allowFullScreen>
-                        </iframe>
-                    </div>
-                    <div className="aspect-w-16 aspect-h-9">
-                        <iframe
-                            src="https://www.youtube.com/embed/wwd7_FPCy5w"
-                            title="Bueno es Dios | Ccint Music | Coreografía"
-                            className="w-full h-96 rounded-lg shadow-md"
-                            allowFullScreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div className="text-center mt-6">
-                    <a href="https://www.youtube.com/@MINISTERIOROHI" target="_blank" className="bg-indigo-600 text-white px-6 py-3 rounded shadow hover:bg-indigo-700 transition">Ver más videos</a>
-                </div>
-            </div>
+            <Videos />
             <Footer />
         </main>
 
